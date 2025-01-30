@@ -19,10 +19,10 @@ const AgendaPage = () => {
     useEffect(() => {
         const fetchPastEvent = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/past-events/${date}`);
+                const response = await axios.get(`https://admin.agingcongress.org/api/past-events/${date}`);
                 console.log(response,'resp');
                 if (response) {
-                    setSelectedPdf(`http://localhost:5000${response.data.eventPdf}`); // Set the first PDF as default
+                    setSelectedPdf(`https://admin.agingcongress.org${response.data.eventPdf}`); // Set the first PDF as default
                 }
             } catch (error) {
                 console.error("Error fetching agendas:", error);

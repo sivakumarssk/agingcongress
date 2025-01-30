@@ -20,7 +20,7 @@ export default function Page() {
 
   const pastEventApi = async (): Promise<void> => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/past-events/${date}`);
+      const response = await axios.get(`https://admin.agingcongress.org/api/past-events/${date}`);
       // console.log(response,'ghnfgh');
       setGallery(response.data?.eventImages);
     } catch (error: any) {

@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 
   const fetchDynamicMenus = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/menus');
+      const response = await axios.get('https://admin.agingcongress.org/api/menus');
       // return response.data.menus;
       setDynamicMenus(response.data.menus)
     } catch (error) {
