@@ -526,14 +526,14 @@ useEffect(()=>{
                     });
                 
                     if (response.data) {
-                      window.location.replace("https://emdcconference.com/payment/success");
+                      window.location.replace("http://agingcongress.org/payment/success");
                       alert("Payment Successful!");
                     } else {
                       alert("Payment failed. Please try again.");
                     }
                   } catch (error) {
                     console.error("Error capturing PayPal order:", error);
-                    window.location.href = "/payment/cancel";
+                    window.location.href = "http://agingcongress.org/payment/cancel";
                     alert(`Failed to complete payment: ${error.response?.data?.error || "Unknown error"}`);
                   }
                 }}

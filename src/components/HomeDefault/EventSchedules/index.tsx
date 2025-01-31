@@ -51,7 +51,7 @@ const EventSchedules: React.FC<MainBannerProps> = ({data}) => {
                   </Tab>
 
                   <Tab>
-                    Day 03
+                    Day 02
                     <span>{data?.day3?.dayDate || 'day Date'}</span>
                   </Tab>
 

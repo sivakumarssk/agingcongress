@@ -29,7 +29,7 @@ const ImageGallery: React.FC<MainBannerProps> = ({ data }) => {
         <div className="row">
           {speakersData.length > 0 ? (
             speakersData.map((speaker, index) => (
-              <div className="col-lg-3 col-sm-6" key={index}>
+              <div className="col-lg-3 col-sm-6" style={{marginBottom:'20px'}} key={index}>
                 <div className="speaker-card">
                   <Image
                     src={`https://admin.agingcongress.org${speaker}`}
@@ -37,6 +37,7 @@ const ImageGallery: React.FC<MainBannerProps> = ({ data }) => {
                     width={250}
                     height={250}
                     className="speaker-image"
+                    style={{maxHeight:'300px',height:'300px', width:'100%'}}
                   />
                 </div>
               </div>
